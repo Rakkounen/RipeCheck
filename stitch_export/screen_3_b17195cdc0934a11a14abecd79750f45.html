@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+<title>RipeCheck - Splash Screen</title>
+<!-- Google Fonts: Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script data-purpose="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            'sage-bg-start': '#EBF3E8',
+            'sage-bg-mid': '#F4F7F2',
+            'sage-bg-end': '#FAFAF5',
+            'deep-green': '#1E5128',
+            'forest-green': '#2E7D32',
+            'leaf-green': '#558B2F',
+            'soft-leaf': '#E8F5E9',
+            'mango-yellow': '#F59E0B',
+            'mango-amber': '#E67E22',
+            'mango-light': '#FFF8E1'
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom CSS -->
+<style data-purpose="animations">
+    @keyframes subtlePulseScale {
+      0% {
+        transform: scale(0.94);
+        opacity: 0;
+      }
+      50% {
+        transform: scale(1.02);
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInSlideUp {
+      0% {
+        opacity: 0;
+        transform: translateY(14px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pulseSoft {
+      0%, 100% {
+        opacity: 0.3;
+        transform: scale(0.85);
+      }
+      50% {
+        opacity: 1;
+        transform: scale(1.15);
+      }
+    }
+
+    .animate-logo-entrance {
+      animation: subtlePulseScale 1.1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    .animate-fade-up {
+      animation: fadeInSlideUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.35s forwards;
+      opacity: 0;
+    }
+
+    .animate-footer-fade {
+      animation: fadeInSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.6s forwards;
+      opacity: 0;
+    }
+
+    .animate-pulsing-dot {
+      animation: pulseSoft 1.8s ease-in-out infinite;
+    }
+  </style>
+<style data-purpose="layout-glow">
+    /* Subtle organic background ambient glow */
+    .bg-gradient-radial {
+      background: radial-gradient(circle at 50% 36%, rgba(245, 158, 11, 0.08) 0%, rgba(85, 139, 47, 0.07) 35%, rgba(244, 247, 242, 0) 70%);
+    }
+    .app-icon-shadow {
+      box-shadow: 0 20px 45px -12px rgba(46, 125, 50, 0.16),
+                  0 8px 18px -6px rgba(0, 0, 0, 0.04),
+                  inset 0 1px 1px 0 rgba(255, 255, 255, 0.9);
+    }
+  </style>
+<!-- END: Custom CSS -->
+</head>
+<body class="bg-[#F4F7F2] text-slate-800 antialiased font-sans select-none overflow-hidden m-0 p-0 flex justify-center items-center min-h-screen">
+<!-- BEGIN: Mobile Canvas Screen (Full bleed 390px native mobile experience) -->
+<main class="w-full max-w-[390px] h-[844px] max-h-screen relative flex flex-col justify-between bg-gradient-to-b from-[#EBF3E8] via-[#F4F7F2] to-[#FBFBF7] overflow-hidden" data-purpose="splash-screen-container">
+<!-- Ambient Organic Backdrop Gradients -->
+<div aria-hidden="true" class="absolute inset-0 bg-gradient-radial pointer-events-none"></div>
+<div aria-hidden="true" class="absolute -top-24 -right-20 w-64 h-64 bg-[#E2EED9] rounded-full blur-3xl opacity-60 pointer-events-none"></div>
+<div aria-hidden="true" class="absolute top-1/2 -left-28 w-56 h-56 bg-[#FEF3C7] rounded-full blur-3xl opacity-40 pointer-events-none"></div>
+<!-- BEGIN: iOS Status Bar -->
+<header class="w-full pt-3 px-7 flex justify-between items-center z-20 text-[#1F2937]" data-purpose="ios-status-bar">
+<!-- Time Display -->
+<span class="text-[15px] font-semibold tracking-tight">09:41</span>
+<!-- Status Icons: Cellular, Wifi, Battery -->
+<div class="flex items-center space-x-2">
+<!-- Cellular Signal -->
+<svg class="w-4 h-3.5 fill-current" fill="none" viewbox="0 0 18 12" xmlns="http://www.w3.org/2000/svg">
+<rect height="4" rx="0.8" width="2.6" x="0" y="8"></rect>
+<rect height="6.5" rx="0.8" width="2.6" x="4" y="5.5"></rect>
+<rect height="9" rx="0.8" width="2.6" x="8" y="3"></rect>
+<rect height="11.5" rx="0.8" width="2.6" x="12" y="0.5"></rect>
+</svg>
+<!-- Wi-Fi -->
+<svg class="w-4 h-3.5 fill-current" viewbox="0 0 16 12" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8 2.2C5.4 2.2 3.03 3.16 1.2 4.76L0 3.38C2.15 1.5 4.95 0.38 8 0.38C11.05 0.38 13.85 1.5 16 3.38L14.8 4.76C12.97 3.16 10.6 2.2 8 2.2ZM8 6.13C6.46 6.13 5.04 6.7 3.93 7.66L2.73 6.27C4.16 5.03 6 4.26 8 4.26C10 4.26 11.84 5.03 13.27 6.27L12.07 7.66C10.96 6.7 9.54 6.13 8 6.13ZM8 10.05C7.52 10.05 7.07 10.23 6.72 10.54L8 12L9.28 10.54C8.93 10.23 8.48 10.05 8 10.05Z" fill-rule="evenodd"></path>
+</svg>
+<!-- Battery Outline & Level -->
+<div class="relative w-6 h-3 border-[1.5px] border-[#1F2937] rounded-[3.8px] p-0.5 flex items-center">
+<div class="h-full w-3.5 bg-[#1F2937] rounded-[1.8px]"></div>
+<div class="absolute -right-1 top-[2.5px] w-0.5 h-1.5 bg-[#1F2937] rounded-r-sm"></div>
+</div>
+</div>
+</header>
+<!-- END: iOS Status Bar -->
+<!-- BEGIN: Brand Identity & Center Content -->
+<section class="flex-1 flex flex-col items-center justify-center px-6 z-10 -mt-8" data-purpose="hero-brand-section">
+<!-- Brand App Icon Container -->
+<div class="animate-logo-entrance mb-8" data-purpose="app-icon-wrapper">
+<div class="w-[124px] h-[124px] rounded-[32px] bg-white/95 backdrop-blur-md app-icon-shadow border border-white/90 flex flex-col items-center justify-center p-4 relative group">
+<!-- Scanner Target Brackets & Fruit Graphic SVG -->
+<svg class="w-16 h-16" fill="none" viewbox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<!-- Mango Body Gradient -->
+<lineargradient gradientunits="userSpaceOnUse" id="mangoGrad" x1="16" x2="48" y1="20" y2="52">
+<stop offset="0%" stop-color="#FBBF24"></stop>
+<stop offset="65%" stop-color="#F59E0B"></stop>
+<stop offset="100%" stop-color="#EA580C"></stop>
+</lineargradient>
+<!-- Leaf Stem Gradient -->
+<lineargradient gradientunits="userSpaceOnUse" id="leafGrad" x1="30" x2="46" y1="12" y2="24">
+<stop offset="0%" stop-color="#65A30D"></stop>
+<stop offset="100%" stop-color="#2E7D32"></stop>
+</lineargradient>
+<!-- Checkmark / Magnifier Gradient -->
+<lineargradient gradientunits="userSpaceOnUse" id="checkGrad" x1="22" x2="44" y1="28" y2="46">
+<stop offset="0%" stop-color="#16A34A"></stop>
+<stop offset="100%" stop-color="#15803D"></stop>
+</lineargradient>
+</defs>
+<!-- Four Scanner Frame Corner Brackets -->
+<path d="M 10 20 L 10 13 A 4 4 0 0 1 14 9 L 21 9" stroke="#94A3B8" stroke-linecap="round" stroke-width="2.6"></path>
+<path d="M 47 9 L 54 9 A 4 4 0 0 1 58 13 L 58 20" stroke="#94A3B8" stroke-linecap="round" stroke-width="2.6"></path>
+<path d="M 58 48 L 58 55 A 4 4 0 0 1 54 59 L 47 59" stroke="#94A3B8" stroke-linecap="round" stroke-width="2.6"></path>
+<path d="M 21 59 L 14 59 A 4 4 0 0 1 10 55 L 10 48" stroke="#94A3B8" stroke-linecap="round" stroke-width="2.6"></path>
+<!-- Fruit Shape (Organic Mango Silhouette) -->
+<path d="M 27 21 C 36 17, 50 24, 50 36 C 50 47, 39 53, 29 52 C 20 51, 16 43, 19 33 C 21 27, 22 23, 27 21 Z" fill="url(#mangoGrad)"></path>
+<!-- Fruit Highlight Glow -->
+<path d="M 26 24 C 32 21, 42 26, 44 32 C 41 28, 32 26, 26 27 Z" fill="#FFFBEB" opacity="0.65"></path>
+<!-- Botanical Leaf on Stem -->
+<path d="M 33 22 C 32 15, 39 12, 45 13 C 44 19, 39 22, 33 22 Z" fill="url(#leafGrad)"></path>
+<!-- Dynamic Precision Checkmark / Scanner Verification Symbol -->
+<path d="M 26 36.5 L 32.5 43 L 45.5 28.5" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.8"></path>
+<path d="M 26 36.5 L 32.5 43 L 45.5 28.5" stroke="url(#checkGrad)" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+</svg>
+<!-- Inner App Label -->
+<span class="text-[10.5px] font-bold text-slate-800 tracking-tight mt-1.5 flex items-center">
+<span class="text-mango-amber">Ripe</span><span class="text-deep-green">Check</span>
+</span>
+</div>
+</div>
+<!-- Main Typography & Taglines -->
+<div class="animate-fade-up flex flex-col items-center text-center space-y-3" data-purpose="brand-text">
+<!-- Wordmark Title -->
+<h1 class="text-3xl font-extrabold tracking-tight flex items-center space-x-1.5">
+<span class="text-mango-amber">Ripe</span>
+<span class="text-deep-green">Check</span>
+</h1>
+<!-- Feature Pill Badge -->
+<div class="inline-flex items-center px-3 py-1 bg-emerald-50/90 border border-emerald-200/70 rounded-full shadow-xs">
+<!-- Small Leaf Icon -->
+<svg class="w-3.5 h-3.5 text-leaf-green mr-1.5" fill="currentColor" viewbox="0 0 24 24">
+<path d="M21 3C11.5 3 3 11.5 3 21C6.5 21 11 19.5 14.5 16C18 12.5 21 7.5 21 3Z"></path>
+<path d="M3 21L12.5 11.5" stroke="#F4F7F2" stroke-linecap="round" stroke-width="1.8"></path>
+</svg>
+<span class="text-xs font-semibold tracking-wide text-forest-green">Smart Fruit AI Scanner</span>
+</div>
+<!-- Tagline / Subtitle -->
+<p class="text-slate-600 text-sm font-medium tracking-normal pt-1 max-w-[240px] leading-relaxed">
+          Cek kematangan buah dalam sekali foto
+        </p>
+</div>
+</section>
+<!-- END: Brand Identity & Center Content -->
+<!-- BEGIN: Footer Loading State & Home Indicator -->
+<footer class="w-full pb-4 px-6 flex flex-col items-center z-20" data-purpose="splash-footer">
+<!-- Subtle Activity / Engine Status -->
+<div class="animate-footer-fade flex items-center space-x-2 text-xs font-medium text-slate-500 mb-8" data-purpose="loading-indicator">
+<span class="w-2 h-2 rounded-full bg-forest-green animate-pulsing-dot inline-block"></span>
+<span class="tracking-wide">Memuat kecerdasan botani...</span>
+</div>
+<!-- iOS Native Home Indicator Bar -->
+<div class="w-36 h-[5px] bg-slate-300 rounded-full mt-1 mb-1 opacity-80" data-purpose="home-indicator"></div>
+</footer>
+<!-- END: Footer Loading State & Home Indicator -->
+</main>
+<!-- END: Mobile Canvas Screen -->
+</body></html>

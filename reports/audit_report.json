@@ -1,0 +1,3300 @@
+{
+  "splits_info": {
+    "raw_272": {
+      "harumanis_phases_raw_272": 1,
+      "ripe_ori": 129,
+      "rotten_ori": 23,
+      "unripe_ori": 59,
+      "semi_ripe_ori": 61
+    },
+    "augmented_700": {
+      "harumanis_phases_V2 augmented_700": 4,
+      "ripe_aug": 240,
+      "rotten_aug": 124,
+      "semi_ripe_aug": 172,
+      "unripe_aug": 164
+    },
+    "validation_88": {
+      "harumanis_phases_validation_88": 4,
+      "unripe_V": 20,
+      "rotten_V": 4,
+      "semi_ripe_V": 20,
+      "ripe_V": 44
+    },
+    "test_87": {
+      "harumanis_phases_test_87": 4,
+      "ripe_T": 46,
+      "unripe_T": 19,
+      "semi_ripe_T": 19,
+      "rotten_T": 3
+    }
+  },
+  "corrupt_images": [
+    {
+      "file": "harumanis_phases_raw_272/labels original 272 images.csv",
+      "error": "cannot identify image file '/Users/kyrios/Documents/MOBILE II/project_mobile/assets/fruits/Dataset Kematangan/Dataset of Harumanis mango images for multi-modal/harumanis_phases_raw_272/labels original 272 images.csv'"
+    },
+    {
+      "file": "harumanis_phases_V2 augmented_700/Ripe_Augmented_Image_List.xlsx",
+      "error": "cannot identify image file '/Users/kyrios/Documents/MOBILE II/project_mobile/assets/fruits/Dataset Kematangan/Dataset of Harumanis mango images for multi-modal/harumanis_phases_V2 augmented_700/Ripe_Augmented_Image_List.xlsx'"
+    },
+    {
+      "file": "harumanis_phases_V2 augmented_700/Semi_Ripe_Augmented_Image_List.xlsx",
+      "error": "cannot identify image file '/Users/kyrios/Documents/MOBILE II/project_mobile/assets/fruits/Dataset Kematangan/Dataset of Harumanis mango images for multi-modal/harumanis_phases_V2 augmented_700/Semi_Ripe_Augmented_Image_List.xlsx'"
+    },
+    {
+      "file": "harumanis_phases_V2 augmented_700/Rotten_Augmented_Image_List.xlsx",
+      "error": "cannot identify image file '/Users/kyrios/Documents/MOBILE II/project_mobile/assets/fruits/Dataset Kematangan/Dataset of Harumanis mango images for multi-modal/harumanis_phases_V2 augmented_700/Rotten_Augmented_Image_List.xlsx'"
+    },
+    {
+      "file": "harumanis_phases_V2 augmented_700/Unripe_Augmented_Image_List.xlsx",
+      "error": "cannot identify image file '/Users/kyrios/Documents/MOBILE II/project_mobile/assets/fruits/Dataset Kematangan/Dataset of Harumanis mango images for multi-modal/harumanis_phases_V2 augmented_700/Unripe_Augmented_Image_List.xlsx'"
+    },
+    {
+      "file": "harumanis_phases_validation_88/Rotten_Validation_Image_List.xlsx",
+      "error": "cannot identify image file '/Users/kyrios/Documents/MOBILE II/project_mobile/assets/fruits/Dataset Kematangan/Dataset of Harumanis mango images for multi-modal/harumanis_phases_validation_88/Rotten_Validation_Image_List.xlsx'"
+    },
+    {
+      "file": "harumanis_phases_validation_88/Semi_Ripe_Validation_Image_List.xlsx",
+      "error": "cannot identify image file '/Users/kyrios/Documents/MOBILE II/project_mobile/assets/fruits/Dataset Kematangan/Dataset of Harumanis mango images for multi-modal/harumanis_phases_validation_88/Semi_Ripe_Validation_Image_List.xlsx'"
+    },
+    {
+      "file": "harumanis_phases_validation_88/Ripe_Validation_Image_List.xlsx",
+      "error": "cannot identify image file '/Users/kyrios/Documents/MOBILE II/project_mobile/assets/fruits/Dataset Kematangan/Dataset of Harumanis mango images for multi-modal/harumanis_phases_validation_88/Ripe_Validation_Image_List.xlsx'"
+    },
+    {
+      "file": "harumanis_phases_validation_88/Unripe_Validation_Image_List.xlsx",
+      "error": "cannot identify image file '/Users/kyrios/Documents/MOBILE II/project_mobile/assets/fruits/Dataset Kematangan/Dataset of Harumanis mango images for multi-modal/harumanis_phases_validation_88/Unripe_Validation_Image_List.xlsx'"
+    },
+    {
+      "file": "harumanis_phases_test_87/Unripe_Test_Image_List.xlsx",
+      "error": "cannot identify image file '/Users/kyrios/Documents/MOBILE II/project_mobile/assets/fruits/Dataset Kematangan/Dataset of Harumanis mango images for multi-modal/harumanis_phases_test_87/Unripe_Test_Image_List.xlsx'"
+    },
+    {
+      "file": "harumanis_phases_test_87/Semi_Ripe_Test_Image_List.xlsx",
+      "error": "cannot identify image file '/Users/kyrios/Documents/MOBILE II/project_mobile/assets/fruits/Dataset Kematangan/Dataset of Harumanis mango images for multi-modal/harumanis_phases_test_87/Semi_Ripe_Test_Image_List.xlsx'"
+    },
+    {
+      "file": "harumanis_phases_test_87/Rotten_Test_Image_List.xlsx",
+      "error": "cannot identify image file '/Users/kyrios/Documents/MOBILE II/project_mobile/assets/fruits/Dataset Kematangan/Dataset of Harumanis mango images for multi-modal/harumanis_phases_test_87/Rotten_Test_Image_List.xlsx'"
+    },
+    {
+      "file": "harumanis_phases_test_87/Ripe_Test_Image_List.xlsx",
+      "error": "cannot identify image file '/Users/kyrios/Documents/MOBILE II/project_mobile/assets/fruits/Dataset Kematangan/Dataset of Harumanis mango images for multi-modal/harumanis_phases_test_87/Ripe_Test_Image_List.xlsx'"
+    }
+  ],
+  "duplicates_within_split": {
+    "raw_272": [
+      "harumanis_phases_raw_272/rotten_ori/IMG-149.jpg",
+      "harumanis_phases_raw_272/rotten_ori/IMG-141.jpeg",
+      "harumanis_phases_raw_272/rotten_ori/IMG-135.jpg",
+      "harumanis_phases_raw_272/rotten_ori/IMG-132.jpeg",
+      "harumanis_phases_raw_272/rotten_ori/IMG-152.jpg",
+      "harumanis_phases_raw_272/rotten_ori/IMG-146.jpg",
+      "harumanis_phases_raw_272/rotten_ori/IMG-150.jpg",
+      "harumanis_phases_raw_272/rotten_ori/IMG-151.jpg",
+      "harumanis_phases_raw_272/unripe_ori/IMG-219.jpeg",
+      "harumanis_phases_raw_272/unripe_ori/IMG-215.jpeg",
+      "harumanis_phases_raw_272/unripe_ori/IMG-255.jpeg",
+      "harumanis_phases_raw_272/unripe_ori/IMG-218.jpeg",
+      "harumanis_phases_raw_272/unripe_ori/IMG-224.jpeg",
+      "harumanis_phases_raw_272/unripe_ori/IMG-251.jpeg",
+      "harumanis_phases_raw_272/unripe_ori/IMG-217.jpeg",
+      "harumanis_phases_raw_272/unripe_ori/IMG-216.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-171.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-188.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-167.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-192.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-184.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-185.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-193.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-189.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-166.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-170.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-157.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-205.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-194.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-182.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-213.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-209.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-177.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-161.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-160.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-176.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-208.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-212.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-183.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-195.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-204.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-156.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-211.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-180.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-179.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-207.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-155.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-163.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-175.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-159.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-158.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-174.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-162.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-154.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-206.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-178.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-181.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-210.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-165.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-173.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-169.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-186.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-190.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-201.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-153.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-191.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-168.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-187.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-172.jpeg",
+      "harumanis_phases_raw_272/semi_ripe_ori/IMG-164.jpeg"
+    ],
+    "augmented_700": [
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-155 - flip.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-156 - flip H.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-165 - 180.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-168 - 270.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-171.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-167 - flip.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-167.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-168 - 180.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-162 - 90.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-172 - flip.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-165 - 270.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-153 - flip UDLR.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-157 - 90.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-159 - flip.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-157 - 270.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-160 - 270.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-171 - 180.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-169 - 90.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-160 - 180.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-157 - 180.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-166.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-170.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-171 - 270.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-155 - flip H.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-168 - flip H.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-170 - 90.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-162 - flip.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-164 - 90.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-161 - flip.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-162 - flip H.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-157.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-153 - flip.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-171 - flip H.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-157 - flip +B.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-167 - 180.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-163 - 90.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-158 - flip +B.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-168 - flip.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-167 - 270.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-156 - 90.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-161.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-162 - 270.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-155 - 270.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-160.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-159 - flip +B.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-168 - 90.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-171 - flip.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-158 - 180.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-161 - flip H.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-158 - flip H.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-156 - flip +B.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-158 - 270.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-156.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-172 - flip H.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-155 - 180.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-162 - 180.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-165 - 90.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-165 - flip H.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-171 - 90.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-156 - flip.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-158 - 90.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-162 - flip +B.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-163 - flip.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-170 - 180.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-155.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-156 - 270.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-161 - 270.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-170 - 270.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-163.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-170 - flip +B.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-161 - 180.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-155 - 90.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-156 - 180.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-159.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-159 - flip H.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-160 - 90.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-158 - flip.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-160 - flip H.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-153 - 180.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-170 - flip H.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-158.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-167 - flip H.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-162.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-163 - flip H.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-169 - 270.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-164 - flip +B.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-172 - 90.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-169 - 180.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-166 - 90.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-154.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-153 - 270.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-154 - flip.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-155 - flip UDLR.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-163 - flip +B.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-153 - 90.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-172 - 180.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-171 - flip UDLR.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-159 - 90.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-165.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-169 - flip +B.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-163 - 270.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-154 - 270.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-157 - flip.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-159 - 180.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-165 - flip.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-170 - flip.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-169.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-159 - 270.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-154 - 90.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-169 - flip H.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-166 - flip +B.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-161 - 90.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-153.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-154 - flip H.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-165 - flip UDLR.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-172 - 270.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-154 - 180.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-163 - 180.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-153 - flip H.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-161 - flip UDLR.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-167 - flip +B.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-169 - flip.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-157 - flip H.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-166 - 180.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-168.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-160 - flip +B.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-166 - 270.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-167 - 90.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-154 - flip UDLR.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-172.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-160 - flip.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-164.jpeg",
+      "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-168 - flip +B.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-218 - flip UDLR.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-226 - flip UDLR.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-219.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-217 - flip H.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-215.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-215 - 270.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-218 - 180.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-219 - 90.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-217 - flip UDLR.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-218.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-218 - 270.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-217 - flip.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-215 - 180.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-228 - 270.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-226 - flip.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-228 - 180.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-215 +B.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-226 - 90.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-228 - flip UDLR.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-216 - flip UDLR.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-218 - flip.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-219 - flip H.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-217 - 270.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-224.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-218 - 90.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-215 -B.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-217 - 180.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-215 - 90.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-228.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-216 - flip.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-228 - 90.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-218 - flip H.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-219 - 180.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-219 - 270.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-224 - flip UDLR.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-226.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-226 - 180.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-228 - flip.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-226 - 270.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-222 - flip H.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-215 - flip UDLR.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-216 - 90.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-226 - flip H.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-222 - flip.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-215 - flip H.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-216 - 270.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-217.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-216 - 180.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-219 - flip.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-224 - 180.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-216.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-224 -B.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-217 - 90.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-216 - flip H.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-224 - 270.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-222 - 90.jpeg",
+      "harumanis_phases_V2 augmented_700/unripe_aug/IMG-215 - flip.jpeg"
+    ],
+    "validation_88": [
+      "harumanis_phases_validation_88/semi_ripe_V/IMG-188.jpeg",
+      "harumanis_phases_validation_88/semi_ripe_V/IMG-192.jpeg",
+      "harumanis_phases_validation_88/semi_ripe_V/IMG-184.jpeg",
+      "harumanis_phases_validation_88/semi_ripe_V/IMG-185.jpeg",
+      "harumanis_phases_validation_88/semi_ripe_V/IMG-189.jpeg",
+      "harumanis_phases_validation_88/semi_ripe_V/IMG-182.jpeg",
+      "harumanis_phases_validation_88/semi_ripe_V/IMG-177.jpeg",
+      "harumanis_phases_validation_88/semi_ripe_V/IMG-176.jpeg",
+      "harumanis_phases_validation_88/semi_ripe_V/IMG-183.jpeg",
+      "harumanis_phases_validation_88/semi_ripe_V/IMG-180.jpeg",
+      "harumanis_phases_validation_88/semi_ripe_V/IMG-179.jpeg",
+      "harumanis_phases_validation_88/semi_ripe_V/IMG-178.jpeg",
+      "harumanis_phases_validation_88/semi_ripe_V/IMG-181.jpeg",
+      "harumanis_phases_validation_88/semi_ripe_V/IMG-186.jpeg",
+      "harumanis_phases_validation_88/semi_ripe_V/IMG-190.jpeg",
+      "harumanis_phases_validation_88/semi_ripe_V/IMG-191.jpeg",
+      "harumanis_phases_validation_88/semi_ripe_V/IMG-187.jpeg",
+      "harumanis_phases_validation_88/ripe_V/IMG-55.jpg"
+    ],
+    "test_87": [
+      "harumanis_phases_test_87/unripe_T/IMG-255.jpeg",
+      "harumanis_phases_test_87/semi_ripe_T/IMG-195.jpeg",
+      "harumanis_phases_test_87/semi_ripe_T/IMG-201.jpeg",
+      "harumanis_phases_test_87/rotten_T/IMG-152.jpg",
+      "harumanis_phases_test_87/rotten_T/IMG-150.jpg",
+      "harumanis_phases_test_87/rotten_T/IMG-151.jpg"
+    ]
+  },
+  "cross_split_duplicates": [
+    {
+      "hash": "fc7e55bb24d5a90da004b8ed865b493d",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-57.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-57.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "51d1c49bd3515b1625fa703c5c3c1fd7",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-80.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-80.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "c457a4ae0f2150032119c0610eb92a25",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-94.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-94.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "906b34f0f6a18b4a58ed161bbf3bfcab",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-11.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-153.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-11.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-153.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "9b26390abea28db74ceb9cfac24cad96",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-95.jpg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/rotten_ori/IMG-141.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/rotten_aug/IMG-141.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-95.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "54950a75d2536d63efc4c46b1b1cd0d9",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-81.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-81.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "bf8eace36d6942de103717ccb4909366",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-56.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-56.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "cad0b9598b720439052e78aee431788d",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-2.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-204.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-2.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/semi_ripe_T/IMG-204.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "3764891498e2678e056236edf43e7435",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-54.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-54.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "8f84e91f15dc5193108c1758f4f776ad",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-68.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-68.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "adeeb9a7ed125226193673b8eccbc148",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-97.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-97.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "aacd52db02f1187c623fd7670b882a25",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-31.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-172.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-31.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-172.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "27471e63279c785bc868c1538e9dde22",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-82.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-82.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "e5dae031f921661c89cfd91625e338f5",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-96.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-96.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "29860cbb712dbc77e13f0ead09e08ff6",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-69.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-69.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "6f56b3553e49a0c30a71fe646af21c93",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-27.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-169.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-27.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-169.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "c8b4c740d0da7bcfac5c9f7a283ca977",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-79.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-79.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "919ceae2f741e2c932106641aaafbff7",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-51.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-51.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "b784354a1bca67a03de74647c72110db",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-45.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-45.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "a924d37c698a618e4db148299bbfc0a5",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-26.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-168.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-26.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-168.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "be35671c02af0b6385a024fa93353b55",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-92.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-92.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "fc8f70ab841622ef900c8872fe2dfb6c",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-86.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-86.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "913a39e67e89d9e62ffd36a70fcb1933",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-87.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-87.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "a422f872be9b432f374d3134163e6c97",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-93.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-93.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "00d226cce3f2f2b4951054deab340cf1",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-50.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-50.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "4f148dd83d627b81294827d8948d102a",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-78.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-78.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "e844d56b6b57e286aaa41ad59e29b54f",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-3.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-205.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-3.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/semi_ripe_T/IMG-205.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "e085b58dbbaf1feb11ff173fe5a2a3fc",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-46.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-46.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "6e842dd52611b16b9252966937c9c5ca",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-85.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-85.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "b20a4607a3ad58810439c3ba7433e840",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-91.jpg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/rotten_ori/IMG-132.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/rotten_aug/IMG-132.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-91.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "4be0694c84f2b5f2621ae19f4058e181",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-10.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-213.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-10.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/semi_ripe_T/IMG-213.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "2d5e5e6ba38c3726c14c32b81696cca3",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-90.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-90.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "c637217ae738199cfbe24a72055bee5c",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-84.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-84.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "f165115bb8f912604259327a90abf9c5",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-53.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-53.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "8f12081dbb637403164db68c204d2214",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-47.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-47.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "68420e7ff78ccc98aec02bae0f6d7999",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-105.jpg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/rotten_aug/IMG-134 - 270.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "e4798daca0e8c25b0f80eaa0540024e0",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-111.jpg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/rotten_ori/IMG-150.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-111.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/rotten_T/IMG-150.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "60dbdb90e12220437e58d9366987b983",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-104.jpg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/rotten_aug/IMG-133 - 270.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "359c360b30971bd704c561d3d822cdf7",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-37.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-37.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "05a091eeddfc74772034604ed0676f8d",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-21.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-163.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-21.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-163.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "69a94614f339d07223c9e6f97a44fc7d",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-8.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-210.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-8.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/semi_ripe_T/IMG-210.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "5fa1b99a8a0b14013df0d593a083b3f0",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-112.jpg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/rotten_ori/IMG-151.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-112.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/rotten_T/IMG-151.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "a8706d2f96e6e7286db5fa0615cd2236",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-106.jpg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/rotten_aug/IMG-135 - 270.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "9a0199765594246f6ff33d4f29eebaba",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-17.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-159.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-17.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-159.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "12e3e47f61d33166e1bf39121f0b4f04",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-107.jpg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/rotten_ori/IMG-149.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/rotten_V/IMG-149.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-107.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "01cadcba5712cbb89662554d88c148cf",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-4.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-206.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-4.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/semi_ripe_T/IMG-206.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "8dd102fe235ade5a222de49284467b58",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-5.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-207.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-5.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/semi_ripe_T/IMG-207.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "a1177ab5ee9fdfc8eb6bc63d8238725f",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-117.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-117.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "2b9bcbfe6b0070adc3fd5a4acddb4d47",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-103.jpg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/rotten_aug/IMG-130 - 270.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "222cac4cbf821cc70606aa2307a12643",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-16.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-158.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-16.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-158.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "3428acedfca8799e62cd645aacc0293f",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-102.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-102.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "391a6e2f4d991e3e1364663b39a2e156",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-9.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-211.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-9.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/semi_ripe_T/IMG-211.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "7ded7f8712097a48a0e67ab179f11e51",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-20.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-162.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-20.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-162.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "1bb86d913d6a14f3d8db82d6d2220de9",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-100.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-100.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "960e3dd074bf50b92d587f408a1b3530",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-101.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-101.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "eab91126caa7ac2568d2a712887f01ef",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-23.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-218.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-165.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-23.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-165.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/unripe_aug/IMG-218.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "71a864a8d3699729c7ae780957c7de69",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-118.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-118.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "20d72d993fd9a42891ec240920e52677",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-35.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-219.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-35.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/unripe_aug/IMG-219.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "a021c25a3bd0b9a2f1136ddd2517cfad",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-124.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-124.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "17504b855fefa567180a7a4fa04b33b2",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-19.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-215.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-217.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-161.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-19.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-161.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/unripe_aug/IMG-215.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/unripe_aug/IMG-217.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "f04b3c25a105f5df84fb0c42816983bd",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-125.jpg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/rotten_ori/IMG-152.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-125.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/rotten_T/IMG-152.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "4ba4512ab8c8cbe8d786449deae48742",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-119.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-119.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "ec263fda4a4f78d3a972a5c25408318a",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-6.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-208.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-6.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/semi_ripe_T/IMG-208.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "c3757455de9791d23036b4b0cc3c2fa5",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-127.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-127.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "dc6c1b4e9013efc6bd247af8ec7cdf41",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-15.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-156.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-15.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-156.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "a541ed825613caf9e155583554cf8bc2",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-126.jpg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/rotten_ori/IMG-146.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/rotten_V/IMG-146.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-126.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "f9ed428523c4cc0300b2b61b6d8f2ed2",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-42.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-42.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "32f2ecfe5a2f9e02dec5e8867909eaeb",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-122.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-122.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "faa290c7d993021841fa9a8295af7069",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-14.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-157.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-14.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-157.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "db7af03fd2d068761cf5d542d9ba09fa",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-123.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-123.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "4b23d6bc4f15b20e7a0ef1838c134a76",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-7.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-209.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-7.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/semi_ripe_T/IMG-209.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "0655ff24d7dbf14dc510d9a3e05e75cc",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-109.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-109.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "37edba63db4bc5932b5bc4519da982fa",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-18.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-216.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-160.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-18.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-160.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/unripe_aug/IMG-216.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "c5c0f91a11ba68ac0052e40e247ce442",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-108.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-108.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "d44641e43cee44481bdc479af5f17722",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-34.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-34.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "dc9ac576314bca6403851dddfd8e7e0b",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-120.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-120.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "7b45b4653d83663db39d3ec3db5ee9eb",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-22.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-164.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-22.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-164.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "7f0a0913e47ca689ce8b3de10cf7b44a",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-62.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-62.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "faa79cbbb2e2bc02b8072145f30d5001",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-76.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-76.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "874cac123f2768a9c8caf741f45bea94",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-29.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-171.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-29.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-171.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "d43445d1c4dc1e0d1d323030b232cb84",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-89.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-89.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "3c32eba8af3a482007411527d038717f",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-13.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-155.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-13.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-155.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "53ec448e47aef65569390a81685d990c",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-88.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-88.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "d940ff33444748c322c0eeb32854c7c9",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-77.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-77.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "de5834cfe58bec1d892b7411f8fb39b2",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-75.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-75.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "67b319b8c2228297ee659c3ef30cdd46",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-25.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-167.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-25.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-167.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "dba4d4759d8b3075c3fe4ad3cac35827",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-61.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-61.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "72104e0e870604ee99c4b8c176858bbc",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-49.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-49.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "50d75272af9a7b6c4cdf2a217e4772a0",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-33.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-33.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "2c345ef42c70a84e28ec96e771c623db",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-48.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-48.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "1e52943d1d8b1629a0d1c75b33f56553",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-74.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-74.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "caeb484c298a7453e43d6542c9e5436a",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-70.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-70.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "64ae1471a95d85f701284a76a8dab104",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-32.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-32.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "ff3e683be65a201e366d55db2c899c9e",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-65.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-65.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "1faca07efecf2609293a4b1fa1bc25ec",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-24.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-166.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-24.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-166.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "261b3a275f62197ab897580237a82b57",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-71.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-71.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "0022fe78b0f0d6e48a63317610f214f0",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-59.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-59.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "ac4af27f06088caf4a5dc68bf7959b90",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-67.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-67.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "a44ba678567ce82c6264fa5d967f3344",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-73.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-73.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "2bc40ddb8b44eb13e12f95931e64f620",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-98.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-98.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "8fdc4e9db6eabd1310be79e1d0087bba",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-12.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-154.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-12.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-154.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "0a62c1986019fc1fd54a7992dd4a28a8",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-28.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-170.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-28.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-170.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "64342b5ad72a72053027b92e16ee8c76",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-72.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-72.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "eb2eedb162ef9d8e2ea1ac322856d0dd",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-66.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-66.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "6f95da856c022659c9f60802448f4ab2",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/ripe_ori/IMG-1.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-212.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/ripe_aug/IMG-1.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/semi_ripe_T/IMG-212.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "d267fa45c2ae4d3f957088c5f8bf341b",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/rotten_ori/IMG-148.jpg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/rotten_ori/IMG-135.jpg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/rotten_aug/IMG-135.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/rotten_V/IMG-148.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-106.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "4150b89a5da0bbf8e5a55b321c453799",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/rotten_ori/IMG-131.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/rotten_aug/IMG-131.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "4a8c096c2db4d46ffab48300cea21ebe",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/rotten_ori/IMG-139.jpg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/rotten_aug/IMG-139.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "104b85050509b4aadbc9d93400269c24",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/rotten_ori/IMG-138.jpg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/rotten_aug/IMG-138.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "3b972f00751a9efd09fe9ede81a65c0c",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/rotten_ori/IMG-130.jpg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/rotten_aug/IMG-130.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-103.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "a9480eda70a4b90079f0f335237518c0",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/rotten_ori/IMG-143.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/rotten_aug/IMG-143.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-43.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "8d141cf90625cb18e56a7a5eb091c43a",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/rotten_ori/IMG-133.jpg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/rotten_aug/IMG-133.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-104.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "bf072c7bb0cfc9070f2bd5ef4ebc8471",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/rotten_ori/IMG-136.jpg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/rotten_aug/IMG-136.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "23391d548cec167c75f83c47459a3c7e",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/rotten_ori/IMG-137.jpg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/rotten_aug/IMG-137.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "616ff5506fff22bd3d0fb55227808bd1",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/rotten_ori/IMG-142.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/rotten_aug/IMG-142.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "da65ab0734dbbb320d8f855e69ec625b",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/rotten_ori/IMG-134.jpg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/rotten_aug/IMG-134.jpg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/ripe_T/IMG-105.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "480f98219cc4a6d81ad71aa81416bbad",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/rotten_ori/IMG-147.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/rotten_V/IMG-147.jpg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-55.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "3fdd20e3dc61e06410a84ef9b776f7c0",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/rotten_ori/IMG-145.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/rotten_aug/IMG-145.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "8de16a035d7939848c0d7dba5d8f5c73",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/rotten_ori/IMG-144.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/rotten_aug/IMG-144.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/ripe_V/IMG-44.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "06f77f325b2800cae9f29b62ba8959b9",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/rotten_ori/IMG-140.jpg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/rotten_aug/IMG-140.jpg"
+        ]
+      ]
+    },
+    {
+      "hash": "fb5c0c2d334507441a48ffd2acb8213f",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-262.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/unripe_T/IMG-262.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "7501ae3830df449d014afdc9f44b8574",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-235.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-176.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/unripe_V/IMG-235.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/semi_ripe_V/IMG-176.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "e02b35309d3e4f2dc1c56be778d58cf0",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-223.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/unripe_aug/IMG-223.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "d25387556223d171d3166edd8f5bd0f9",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-258.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-194.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/semi_ripe_V/IMG-194.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/unripe_T/IMG-258.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "c7a5ffaae2703a2b1f8f64c56d187e49",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-239.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-180.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/unripe_V/IMG-239.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/semi_ripe_V/IMG-180.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "9414394163b93d0bca71c26317444edd",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-254.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-255.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/unripe_T/IMG-254.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/unripe_T/IMG-255.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "4078569515825a873bb407fee495dba0",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-242.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-183.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/unripe_V/IMG-242.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/semi_ripe_V/IMG-183.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "79229c4a3e373b1fc2f338371b423c12",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-214.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-251.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/unripe_aug/IMG-214.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/unripe_V/IMG-251.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "2a28abe5825ea858596db2ecd30ae32f",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-243.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-184.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/unripe_V/IMG-243.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/semi_ripe_V/IMG-184.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "f5d52771a8806a24c37d1bc810992f74",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-238.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-179.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/unripe_V/IMG-238.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/semi_ripe_V/IMG-179.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "84dace78fc39eb655323a88ed33f9318",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-259.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/unripe_T/IMG-259.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "1b40427b2478c7e3b831fb7c58ffd77c",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-222.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-224.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/unripe_aug/IMG-222.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/unripe_aug/IMG-224.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "f1a2f054a6df2d09917485e972edf943",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-234.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/unripe_V/IMG-234.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "fbf42704e83bda07c406e426c8d7107d",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-263.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/unripe_T/IMG-263.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "078932e1734b314a0cdb5c471499aa55",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-268.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/unripe_T/IMG-268.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "68863236a41077653eb2fb66f079bd68",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-229.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-175.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/unripe_aug/IMG-229.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/semi_ripe_V/IMG-175.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "3eb69ce1b78e1caacb573e9cf2acc243",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-252.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-191.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/unripe_V/IMG-252.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/semi_ripe_V/IMG-191.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "2fe0c8ebaed99edba715df2518c66777",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-244.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-185.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/unripe_V/IMG-244.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/semi_ripe_V/IMG-185.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "557e39f0eedce1cbd8b6b0223b57e279",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-264.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-195.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/unripe_T/IMG-264.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/semi_ripe_T/IMG-195.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "4be1aa2088f13961284d7a03c179febb",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-233.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/unripe_aug/IMG-233.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "9e89051a6bfa5b95e9a64c85a552a077",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-225.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/unripe_aug/IMG-225.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "d8d024d4ecd7fc24ebd47dab0a61b8e0",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-272.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/unripe_T/IMG-272.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "a2748a2bb5cbe2b0e43a3399bb6c9b6b",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-248.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-189.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/unripe_V/IMG-248.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/semi_ripe_V/IMG-189.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "5356a1f28ee9bd2b7faa210cffa93211",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-249.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-190.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/unripe_V/IMG-249.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/semi_ripe_V/IMG-190.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "b591708971452dc77d96d0acc3fc99c1",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-232.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/unripe_aug/IMG-232.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "def2fb29a489684dc3824c0aaeba43da",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-265.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/unripe_T/IMG-265.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "8429047163b123c0882593b74f346dbc",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-245.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-186.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/unripe_V/IMG-245.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/semi_ripe_V/IMG-186.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "9f02ab03826ad71de06a4bd0a611186a",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-253.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-192.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/unripe_V/IMG-253.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/semi_ripe_V/IMG-192.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "85140423e9c13c7e5bbf85bf1eb4c5be",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-228.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-174.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-174.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/unripe_aug/IMG-228.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "d77d577479fdc4a853869b8c34e833a5",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-269.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/unripe_T/IMG-269.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "347d9456edfc053d44a0c4a06587d92d",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-246.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-187.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/unripe_V/IMG-246.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/semi_ripe_V/IMG-187.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "46da45f1100de752e1ec1d77d1b96d3d",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-250.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/unripe_V/IMG-250.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "1b53384c2aa9080a264885a069144f3d",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-270.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/unripe_T/IMG-270.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "fd9f7bbb9c8b01b22454b8d80cd4243d",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-227.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/unripe_aug/IMG-227.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "65689c89b40ae3712aa07b96362c849c",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-231.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/unripe_aug/IMG-231.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "f71dc9951c574d2af967774c51090e17",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-266.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/unripe_T/IMG-266.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "59d0a651db96de377d6e21cbcc69da85",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-267.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/unripe_T/IMG-267.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "b5831c8aeee790fc337463b1e5c40a73",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-230.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/unripe_aug/IMG-230.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "96c88e52ac0b78e9a7bc1b6ad8442022",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-226.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-173.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/semi_ripe_aug/IMG-173.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/unripe_aug/IMG-226.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "f203e895e8706568aff5be03f514e4cb",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-271.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/unripe_T/IMG-271.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "8818c5d7b7bc2eb601e346bd9175677b",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-247.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-188.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/unripe_V/IMG-247.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/semi_ripe_V/IMG-188.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "a2687ac9a526c81b52fc8f92cfeb8c67",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-221.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/unripe_aug/IMG-221.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "5f82e83a7946b574eb1027f09423a097",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-237.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-178.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/unripe_V/IMG-237.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/semi_ripe_V/IMG-178.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "047f78cc50412e4549db87342d822056",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-260.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/unripe_T/IMG-260.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "0e031effe7019b9889118f3e4f335236",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-240.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-181.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/unripe_V/IMG-240.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/semi_ripe_V/IMG-181.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "838d9ad8d74945df8343988b67501bd4",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-256.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/unripe_T/IMG-256.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "3fa920d0622901d44870e52b4f8af75d",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-257.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-193.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/semi_ripe_V/IMG-193.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/unripe_T/IMG-257.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "3aa092a695816e0dc0c5dcef2e8a12e2",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-241.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-182.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/unripe_V/IMG-241.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/semi_ripe_V/IMG-182.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "df69d98119006b95127c807316b10f9c",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-261.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/unripe_T/IMG-261.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "619d4158dd91553941e54f9da232df1d",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-236.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-177.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/unripe_V/IMG-236.jpeg"
+        ],
+        [
+          "validation_88",
+          "harumanis_phases_validation_88/semi_ripe_V/IMG-177.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "da702be101aed6fd4291f8684976748d",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/unripe_ori/IMG-220.jpeg"
+        ],
+        [
+          "augmented_700",
+          "harumanis_phases_V2 augmented_700/unripe_aug/IMG-220.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "44e3e87dba9424a888ec7b1951419af8",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-203.jpeg"
+        ],
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-201.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/semi_ripe_T/IMG-203.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/semi_ripe_T/IMG-201.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "f26eaff145bc920dd6f0e9d76c08107e",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-202.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/semi_ripe_T/IMG-202.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "997079bae8d6f98092707e97fefd55d9",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-198.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/semi_ripe_T/IMG-198.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "f1e15364393de8f4cabc82c8785c0e88",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-199.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/semi_ripe_T/IMG-199.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "ceea1b877701dd705d7458ba6d0a5935",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-196.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/semi_ripe_T/IMG-196.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "c7ed5e05397768d651317f2200e50730",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-197.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/semi_ripe_T/IMG-197.jpeg"
+        ]
+      ]
+    },
+    {
+      "hash": "1808d4da73c63d998316ffb426b807d4",
+      "occurrences": [
+        [
+          "raw_272",
+          "harumanis_phases_raw_272/semi_ripe_ori/IMG-200.jpeg"
+        ],
+        [
+          "test_87",
+          "harumanis_phases_test_87/semi_ripe_T/IMG-200.jpeg"
+        ]
+      ]
+    }
+  ],
+  "class_distribution": {},
+  "image_modes": {
+    "RGB": 1147
+  },
+  "image_formats": {
+    "JPEG": 1147
+  },
+  "sizes": {
+    "2256x4000": 174,
+    "651x1156": 46,
+    "1443x2560": 766,
+    "4000x2256": 74,
+    "2560x1443": 31,
+    "1280x721": 20,
+    "721x1280": 36
+  }
+}

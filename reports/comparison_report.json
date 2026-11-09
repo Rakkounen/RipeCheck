@@ -1,0 +1,13 @@
+{
+  "EfficientNetB0": {
+    "test_accuracy": 0.3563218390804598,
+    "macro_f1": 0.36504518872939923,
+    "weighted_f1": 0.39033590594389145
+  },
+  "MobileNetV3Small": {
+    "test_accuracy": 0.16091954022988506,
+    "macro_f1": 0.20626550868486354,
+    "weighted_f1": 0.15896580245857223
+  },
+  "best_model": "EfficientNetB0"
+}

@@ -1,0 +1,20 @@
+{
+  "model_name": "RipeCheck Harumanis Classifier",
+  "input_shape": [
+    1,
+    224,
+    224,
+    3
+  ],
+  "input_dtype": "float32",
+  "input_range": "[0, 255]",
+  "color_format": "RGB",
+  "labels": [
+    "Mangga Harumanis Busuk",
+    "Mangga Harumanis Matang",
+    "Mangga Harumanis Mentah",
+    "Mangga Harumanis Setengah Matang"
+  ],
+  "max_discrepancy_keras_vs_tflite": 0.07427912950515747,
+  "tflite_size_mb": 4.52
+}

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+<title>RipeCheck - Cara Memindai</title>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              DEFAULT: '#2E7D32',
+              dark: '#246328',
+              light: '#E8F5E9',
+              muted: '#D6DFD4',
+            },
+            text: {
+              main: '#1F2A1F',
+              secondary: '#4A554B',
+              subtle: '#5C6B5E',
+            },
+            surface: {
+              card: '#FFFFFF',
+              border: '#E4EAE1',
+              bg: '#F8FAF7'
+            }
+          },
+          fontFamily: {
+            sans: ['-apple-system', 'BlinkMacSystemFont', '"SF Pro Display"', '"SF Pro Text"', 'Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom Styles -->
+<style data-purpose="base-typography">
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background-color: #F8FAF7;
+      color: #1F2A1F;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+  </style>
+<style data-purpose="ios-system-ui">
+    .ios-safe-top {
+      padding-top: env(safe-area-inset-top, 14px);
+    }
+    .ios-safe-bottom {
+      padding-bottom: env(safe-area-inset-bottom, 16px);
+    }
+  </style>
+<!-- END: Custom Styles -->
+</head>
+<body class="flex flex-col min-h-screen justify-between overflow-x-hidden selection:bg-brand/20">
+<!-- BEGIN: TopBar -->
+<header class="w-full ios-safe-top pt-2 px-6 flex flex-col z-20">
+<!-- iOS Status Bar Simulation -->
+<div class="flex justify-between items-center text-sm font-semibold tracking-tight text-text-main py-1" data-purpose="status-bar">
+<span>09:41</span>
+<div class="flex items-center space-x-2">
+<!-- Cellular Signal Icon -->
+<svg class="w-4 h-3.5 fill-current" viewbox="0 0 17 12">
+<rect height="4" rx="1" width="3" x="0" y="8"></rect>
+<rect height="7" rx="1" width="3" x="4.5" y="5"></rect>
+<rect height="10" rx="1" width="3" x="9" y="2"></rect>
+<rect height="12" rx="1" width="3" x="13.5" y="0"></rect>
+</svg>
+<!-- Wi-Fi Icon -->
+<svg class="w-4 h-3.5 fill-current" viewbox="0 0 16 12">
+<path d="M8 2.8c2.9 0 5.6 1.1 7.6 3.1.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0-1.6-1.6-3.8-2.5-6.2-2.5s-4.6.9-6.2 2.5c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4C2.4 3.9 5.1 2.8 8 2.8zm0 4c1.8 0 3.5.7 4.8 2 .4.4.4 1 0 1.4-.4.4-1 .4-1.4 0-.9-.9-2.1-1.4-3.4-1.4s-2.5.5-3.4 1.4c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4C4.5 7.5 6.2 6.8 8 6.8zm0 4a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z"></path>
+</svg>
+<!-- Battery Icon -->
+<div class="w-6 h-3 border border-current rounded-[3px] p-[1px] flex items-center relative">
+<div class="h-full w-4/5 bg-current rounded-[1.5px]"></div>
+<div class="absolute -right-1 top-1 w-0.5 h-1 bg-current rounded-r-sm"></div>
+</div>
+</div>
+</div>
+<!-- Navigation Bar: App Brand & Skip Action -->
+<div class="flex items-center justify-between pt-3 pb-1" data-purpose="app-header">
+<div class="flex items-center space-x-2">
+<div class="w-7 h-7 rounded-lg bg-brand/10 flex items-center justify-center text-brand">
+<!-- Leaf / Scan Brand Glyph -->
+<svg class="w-4 h-4 stroke-brand" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24">
+<path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+<path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+</svg>
+</div>
+<span class="font-bold text-base tracking-tight text-brand">RipeCheck</span>
+</div>
+<!-- Lewati (Skip) button -->
+<button class="text-sm font-medium text-text-subtle hover:text-text-main transition-colors px-2 py-1" type="button">
+        Lewati
+      </button>
+</div>
+</header>
+<!-- END: TopBar -->
+<!-- BEGIN: MainContent -->
+<main class="flex-1 flex flex-col justify-start px-5 pt-2 pb-4">
+<!-- Visual Graphic: Phone scanning fruit illustration -->
+<div class="w-full flex justify-center mb-3" data-purpose="illustration-wrapper">
+<div class="relative w-full max-w-[340px] aspect-[16/10] rounded-2xl overflow-hidden bg-gradient-to-br from-[#EBF2EB] to-[#DEE8DD] shadow-sm border border-surface-border flex items-center justify-center p-3">
+<!-- SVG Modern Vector Illustration -->
+<svg class="w-full h-full" fill="none" viewbox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+<!-- Background aesthetic elements -->
+<circle cx="260" cy="45" fill="#E2EBE0" opacity="0.7" r="35"></circle>
+<path d="M20 170 Q 70 120 140 170 T 260 160" fill="none" stroke="#CAD8C8" stroke-dasharray="4 4" stroke-width="2"></path>
+<!-- Desk / Surface shadow -->
+<ellipse cx="160" cy="175" fill="#CAD5C7" opacity="0.6" rx="100" ry="8"></ellipse>
+<!-- Target Fruit: Fresh Apple with Leaf -->
+<g id="target-fruit">
+<ellipse cx="160" cy="148" fill="#DC3838" rx="28" ry="25"></ellipse>
+<ellipse cx="152" cy="144" fill="#E84848" rx="20" ry="22"></ellipse>
+<!-- Apple Highlight -->
+<path d="M145 133 C 140 137 138 147 142 153" stroke="#FFA3A3" stroke-linecap="round" stroke-width="2"></path>
+<!-- Apple Stem & Leaf -->
+<path d="M160 125 C 160 119 164 116 166 114" stroke="#5D4037" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M164 118 C 172 116 177 121 176 125 C 170 126 165 123 164 118 Z" fill="#4CAF50"></path>
+</g>
+<!-- Smartphone Body holding the camera frame -->
+<g filter="drop-shadow(0px 8px 16px rgba(0,0,0,0.12))" id="phone-scanner">
+<!-- Hand Silhouette (Left hand holding) -->
+<path d="M85 180 C 85 155 102 140 118 135 L 120 175 Z" fill="#E6BA9C" opacity="0.8"></path>
+<path d="M85 150 C 95 140 112 142 120 148" stroke="#DDA888" stroke-linecap="round" stroke-width="4"></path>
+<!-- Smartphone Device -->
+<rect fill="#1E241E" height="152" rx="18" width="100" x="110" y="24"></rect>
+<rect fill="#F4F8F4" height="146" rx="15" width="94" x="113" y="27"></rect>
+<!-- Phone Top Speaker / Camera -->
+<rect fill="#2E332E" height="3.5" rx="1.75" width="30" x="145" y="32"></rect>
+<circle cx="140" cy="34" fill="#4B5563" r="1.5"></circle>
+<!-- Phone Viewfinder Screen -->
+<rect fill="#EBF3EB" height="114" rx="10" width="88" x="116" y="42"></rect>
+<!-- Viewfinder Mirrored Fruit -->
+<ellipse cx="160" cy="100" fill="#DC3838" rx="18" ry="16"></ellipse>
+<ellipse cx="155" cy="98" fill="#F05353" rx="13" ry="14"></ellipse>
+<path d="M160 84 C 160 80 163 78 164 76" stroke="#5D4037" stroke-linecap="round" stroke-width="1.8"></path>
+<path d="M162 79 C 168 77 171 80 170 83 C 166 84 163 82 162 79 Z" fill="#2E7D32"></path>
+<!-- AR / AI Focus Reticle (Bounding Frame) -->
+<g stroke="#2E7D32" stroke-linecap="round" stroke-width="2">
+<!-- Top Left -->
+<path d="M 136 86 L 136 80 L 142 80"></path>
+<!-- Top Right -->
+<path d="M 178 80 L 184 80 L 184 86"></path>
+<!-- Bottom Left -->
+<path d="M 136 114 L 136 120 L 142 120"></path>
+<!-- Bottom Right -->
+<path d="M 178 120 L 184 120 L 184 114"></path>
+</g>
+<!-- Focus Meter / Tag -->
+<rect fill="#2E7D32" height="11" rx="5.5" width="56" x="132" y="65"></rect>
+<text fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="6" font-weight="600" text-anchor="middle" x="160" y="73">FOKUS 98%</text>
+<!-- On-screen Shutter Icon Graphic -->
+<circle cx="160" cy="144" fill="none" r="7" stroke="#2E7D32" stroke-width="1.5"></circle>
+<circle cx="160" cy="144" fill="#2E7D32" r="5"></circle>
+</g>
+<!-- Right hand fingers gently holding edge -->
+<g id="right-hand">
+<path d="M 210 90 C 215 90 222 93 222 98 C 222 103 214 104 210 104" fill="#E6BA9C"></path>
+<path d="M 210 108 C 216 108 223 111 223 116 C 223 121 214 122 210 122" fill="#E6BA9C"></path>
+<path d="M 210 126 C 215 126 220 129 220 133 C 220 137 213 138 210 138" fill="#E6BA9C"></path>
+</g>
+</svg>
+<!-- Dynamic AI status floating badge -->
+<div class="absolute bottom-2.5 left-auto px-3 py-1 bg-white/95 backdrop-blur-sm rounded-full shadow-sm border border-surface-border flex items-center space-x-1.5" data-purpose="floating-badge">
+<div class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></div>
+<span class="text-[11px] font-medium text-text-secondary tracking-tight">Fokus Kamera AI Otomatis</span>
+</div>
+</div>
+</div>
+<!-- Title and Subtitle Block -->
+<div class="text-center px-2 mb-4" data-purpose="instruction-header">
+<h1 class="text-[25px] leading-tight font-extrabold text-text-main tracking-tight mb-1.5">
+        Cara Memindai
+      </h1>
+<p class="text-[14px] text-text-secondary leading-snug max-w-[310px] mx-auto">
+        Ikuti langkah sederhana untuk mendapatkan hasil prediksi yang lebih baik.
+      </p>
+</div>
+<!-- 3 Instructional Steps List -->
+<section class="space-y-2.5 w-full max-w-[360px] mx-auto" data-purpose="instruction-steps">
+<!-- Step 1: Cahaya cukup -->
+<div class="bg-surface-card border border-surface-border rounded-xl p-3 flex items-center space-x-3.5 shadow-sm transition hover:shadow-md">
+<!-- Sun / Light Icon -->
+<div class="w-11 h-11 shrink-0 rounded-xl bg-brand-light flex items-center justify-center text-brand" data-purpose="step-icon">
+<svg class="w-5 h-5 stroke-brand" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="4"></circle>
+<path d="M12 2v2"></path>
+<path d="M12 20v2"></path>
+<path d="m4.93 4.93 1.41 1.41"></path>
+<path d="m17.66 17.66 1.41 1.41"></path>
+<path d="M2 12h2"></path>
+<path d="M20 12h2"></path>
+<path d="m6.34 17.66-1.41 1.41"></path>
+<path d="m19.07 4.93-1.41 1.41"></path>
+</svg>
+</div>
+<!-- Step Copy -->
+<div class="flex-1 min-w-0">
+<div class="flex items-center space-x-2">
+<span class="text-[10px] font-bold text-brand bg-brand-light/80 px-1.5 py-0.5 rounded tracking-wide uppercase">Langkah 1</span>
+<h2 class="text-sm font-bold text-text-main leading-tight truncate">Cahaya Cukup</h2>
+</div>
+<p class="text-xs text-text-secondary mt-0.5 leading-normal">
+            Gunakan pencahayaan alami yang merata.
+          </p>
+</div>
+</div>
+<!-- Step 2: Buah di tengah bingkai -->
+<div class="bg-surface-card border border-surface-border rounded-xl p-3 flex items-center space-x-3.5 shadow-sm transition hover:shadow-md">
+<!-- Focus-frame Icon -->
+<div class="w-11 h-11 shrink-0 rounded-xl bg-brand-light flex items-center justify-center text-brand" data-purpose="step-icon">
+<svg class="w-5 h-5 stroke-brand" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M4 8V5a1 1 0 0 1 1-1h3"></path>
+<path d="M16 4h3a1 1 0 0 1 1 1v3"></path>
+<path d="M20 16v3a1 1 0 0 1-1 1h-3"></path>
+<path d="M8 20H5a1 1 0 0 1-1-1v-3"></path>
+<circle cx="12" cy="12" r="2.5"></circle>
+</svg>
+</div>
+<!-- Step Copy -->
+<div class="flex-1 min-w-0">
+<div class="flex items-center space-x-2">
+<span class="text-[10px] font-bold text-brand bg-brand-light/80 px-1.5 py-0.5 rounded tracking-wide uppercase">Langkah 2</span>
+<h2 class="text-sm font-bold text-text-main leading-tight truncate">Buah di Tengah Bingkai</h2>
+</div>
+<p class="text-xs text-text-secondary mt-0.5 leading-normal">
+            Posisikan buah tepat di dalam kotak panduan.
+          </p>
+</div>
+</div>
+<!-- Step 3: Ambil foto -->
+<div class="bg-surface-card border border-surface-border rounded-xl p-3 flex items-center space-x-3.5 shadow-sm transition hover:shadow-md">
+<!-- Camera Icon -->
+<div class="w-11 h-11 shrink-0 rounded-xl bg-brand-light flex items-center justify-center text-brand" data-purpose="step-icon">
+<svg class="w-5 h-5 stroke-brand" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path>
+<circle cx="12" cy="13" r="3.5"></circle>
+</svg>
+</div>
+<!-- Step Copy -->
+<div class="flex-1 min-w-0">
+<div class="flex items-center space-x-2">
+<span class="text-[10px] font-bold text-brand bg-brand-light/80 px-1.5 py-0.5 rounded tracking-wide uppercase">Langkah 3</span>
+<h2 class="text-sm font-bold text-text-main leading-tight truncate">Ambil Foto</h2>
+</div>
+<p class="text-xs text-text-secondary mt-0.5 leading-normal">
+            Tekan tombol shutter untuk memproses hasil.
+          </p>
+</div>
+</div>
+</section>
+</main>
+<!-- END: MainContent -->
+<!-- BEGIN: BottomNavigationSection -->
+<footer class="w-full px-6 ios-safe-bottom flex flex-col items-center z-20 pb-2" data-purpose="bottom-controls">
+<!-- 3-Dot Page Indicator (Screen 2 active) -->
+<div class="flex items-center space-x-2 mb-4" data-purpose="pagination-indicator">
+<span class="w-2 h-2 rounded-full bg-brand-muted"></span>
+<span class="w-6 h-2 rounded-full bg-brand transition-all"></span>
+<span class="w-2 h-2 rounded-full bg-brand-muted"></span>
+</div>
+<!-- Primary Action: Lanjut Button -->
+<button class="w-full max-w-[360px] h-13 py-3.5 px-6 rounded-full bg-brand hover:bg-brand-dark active:scale-[0.98] text-white font-semibold text-base flex items-center justify-center space-x-2 shadow-md shadow-brand/20 transition-all duration-150" type="button">
+<span>Lanjut</span>
+<svg class="w-4 h-4 stroke-current stroke-[2.5]" fill="none" stroke-linecap="round" stroke-linejoin="round" viewbox="0 0 24 24">
+<path d="M5 12h14"></path>
+<path d="m12 5 7 7-7 7"></path>
+</svg>
+</button>
+<!-- iOS Home Indicator -->
+<div class="w-32 h-1 bg-gray-300 rounded-full mt-3 mb-1" data-purpose="home-indicator"></div>
+</footer>
+<!-- END: BottomNavigationSection -->
+</body></html>

@@ -8,6 +8,8 @@ import 'package:project_mobile/data/models/fruit_prediction_model.dart';
 import 'package:project_mobile/data/repositories/prediction_repository.dart';
 import 'package:project_mobile/features/home/home_screen.dart';
 import 'package:project_mobile/features/onboarding/onboarding_screen.dart';
+import 'package:project_mobile/features/prediction/prediction_screen.dart';
+import 'package:project_mobile/features/scanner/scanner_screen.dart';
 
 void main() {
   setUpAll(() {
@@ -17,6 +19,41 @@ void main() {
 
   setUp(() {
     TestWidgetsFlutterBinding.ensureInitialized();
+  });
+
+  testWidgets('Scanner menunggu pengguna memilih kamera atau galeri', (WidgetTester tester) async {
+    await tester.pumpWidget(const MaterialApp(home: ScannerScreen()));
+
+    expect(find.text('Siap Memindai'), findsOneWidget);
+    expect(find.text('Ambil Foto dengan Kamera'), findsOneWidget);
+    expect(find.text('Pilih dari Galeri'), findsOneWidget);
+  });
+
+  testWidgets('PredictionScreen menampilkan ketidakpastian dan kegagalan riwayat', (WidgetTester tester) async {
+    await tester.pumpWidget(
+      const MaterialApp(
+        home: PredictionScreen(
+          ripenessStatus: 'Mentah',
+          confidence: 0.4,
+          isConfident: false,
+          historySaved: false,
+        ),
+      ),
+    );
+
+    expect(
+      find.text(
+        'Foto belum dapat dianalisis dengan yakin. Silakan ambil foto ulang dengan pencahayaan yang lebih baik.',
+      ),
+      findsOneWidget,
+    );
+    expect(
+      find.text(
+        'Hasil analisis berhasil dibuat, tetapi tidak dapat disimpan ke riwayat.',
+      ),
+      findsOneWidget,
+    );
+    expect(find.textContaining('masih asam dan keras'), findsOneWidget);
   });
 
   testWidgets('SplashScreen membuka Beranda dan menampilkan tombol CTA utama D3', (WidgetTester tester) async {

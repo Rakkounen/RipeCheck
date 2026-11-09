@@ -11,6 +11,7 @@ class PredictionScreen extends StatelessWidget {
   final String ripenessStatus;
   final double confidence;
   final bool isConfident;
+  final bool historySaved;
   final String? imagePath;
 
   const PredictionScreen({
@@ -19,10 +20,11 @@ class PredictionScreen extends StatelessWidget {
     this.ripenessStatus = 'Matang',
     this.confidence = 0.95,
     this.isConfident = true,
+    this.historySaved = true,
     this.imagePath,
   });
 
-  Map<String, String> _getFruitAdvice() {
+  Map<String, String> _getFruitAdvice(String ripenessStatus) {
     final status = ripenessStatus.toLowerCase();
     if (status.contains('matang') && !status.contains('setengah')) {
       return {
@@ -59,9 +61,10 @@ class PredictionScreen extends StatelessWidget {
     final effectiveRipeness = args?['ripenessStatus'] as String? ?? ripenessStatus;
     final effectiveConfidence = (args?['confidence'] as num?)?.toDouble() ?? confidence;
     final effectiveIsConfident = (args?['isConfident'] as bool?) ?? isConfident;
+    final effectiveHistorySaved = (args?['historySaved'] as bool?) ?? historySaved;
     final effectiveImagePath = args?['imagePath'] as String? ?? imagePath;
 
-    final advice = _getFruitAdvice();
+    final advice = _getFruitAdvice(effectiveRipeness);
     final theme = Theme.of(context);
 
     return Scaffold(
@@ -103,6 +106,25 @@ class PredictionScreen extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(height: AppSpacing.md),
+                    ],
+
+                    if (!effectiveHistorySaved) ...[
+                      Container(
+                        padding: const EdgeInsets.all(AppSpacing.sm),
+                        margin: const EdgeInsets.only(bottom: AppSpacing.md),
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFFFF7ED),
+                          borderRadius: AppRadius.smRadius,
+                          border: Border.all(color: const Color(0xFFFDBA74)),
+                        ),
+                        child: Text(
+                          'Hasil analisis berhasil dibuat, tetapi tidak dapat disimpan ke riwayat.',
+                          style: theme.textTheme.bodySmall?.copyWith(
+                            color: const Color(0xFF9A3412),
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ),
                     ],
 
                     // Result Overview Container

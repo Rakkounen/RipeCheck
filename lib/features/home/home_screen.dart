@@ -92,11 +92,12 @@ class _HomeScreenState extends State<HomeScreen> {
       );
 
       final result = await TFLiteService().predictImage(image.path);
-      final fruitName = result['fruitName'] as String? ?? 'Mangga Harumanis';
-      final ripenessStatus = result['ripenessStatus'] as String? ?? 'Matang';
-      final confidence = (result['confidence'] as num?)?.toDouble() ?? 0.95;
+      final fruitName = result['fruitName'] as String;
+      final ripenessStatus = result['ripenessStatus'] as String;
+      final confidence = (result['confidence'] as num).toDouble();
+      final isConfident = result['isConfident'] as bool;
 
-      // Simpan ke riwayat secara aman
+      var historySaved = true;
       try {
         final record = FruitPredictionModel(
           id: DateTime.now().millisecondsSinceEpoch.toString(),
@@ -107,8 +108,8 @@ class _HomeScreenState extends State<HomeScreen> {
           createdAt: DateTime.now(),
         );
         await _repository.savePrediction(record);
-      } catch (dbErr) {
-        // Jangan gagalkan navigasi hasil prediksi jika database lokal belum siap
+      } catch (_) {
+        historySaved = false;
       }
 
       if (!mounted) return;
@@ -121,6 +122,8 @@ class _HomeScreenState extends State<HomeScreen> {
           'fruitName': fruitName,
           'ripenessStatus': ripenessStatus,
           'confidence': confidence,
+          'isConfident': isConfident,
+          'historySaved': historySaved,
           'imagePath': image.path,
         },
       );

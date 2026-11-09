@@ -1,3 +1,6 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 allprojects {
     repositories {
         google()
@@ -16,6 +19,11 @@ subprojects {
     project.layout.buildDirectory.value(newSubprojectBuildDir)
 }
 subprojects {
+    if (name == "tflite_flutter") {
+        tasks.withType<KotlinCompile>().configureEach {
+            compilerOptions.jvmTarget.set(JvmTarget.JVM_11)
+        }
+    }
     project.evaluationDependsOn(":app")
 }
 
